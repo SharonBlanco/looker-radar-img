@@ -1,0 +1,47 @@
+{
+  "dataStudio": {
+    "name": "Radar IMG",
+    "company": "Sharon",
+    "companyUrl": "https://github.com/SharonBlanco",
+    "description": "Visualización de gráfico radar para indicadores IMG.",
+    "logoUrl": "https://www.gstatic.com/analytics-suite/header/suite/v2/ic_data_studio.svg",
+    "supportUrl": "https://github.com/SharonBlanco/looker-radar-img",
+    "privacyPolicyUrl": "https://github.com/SharonBlanco/looker-radar-img",
+    "termsOfServiceUrl": "https://github.com/SharonBlanco/looker-radar-img",
+    "resources": {
+      "js": [
+        "https://unpkg.com/@google/dscc@0.3.1/build/dscc.min.js",
+        "https://d3js.org/d3.v5.min.js",
+        "radar.js"
+      ],
+      "css": []
+    },
+    "components": [
+      {
+        "id": "radar_img",
+        "name": "Radar IMG",
+        "description": "Gráfico radar para varias métricas.",
+        "iconUrl": "https://www.gstatic.com/analytics-suite/header/suite/v2/ic_data_studio.svg",
+        "type": "VISUALIZATION",
+        "fields": {
+          "dimension": [
+            {
+              "id": "dim",
+              "name": "Dimensión (Empresa)",
+              "type": "DIMENSION"
+            }
+          ],
+          "metric": [
+            {
+              "id": "metrics",
+              "name": "Métricas (Regulación, Tendencias, etc.)",
+              "type": "METRIC",
+              "max": 12
+            }
+          ]
+        },
+        "style": []
+      }
+    ]
+  }
+}
